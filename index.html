@@ -14,14 +14,14 @@
     </head>
     <body>
         
-        <div class="container">
+        <div class="container" >
             <div class="but">
                 <button class="tablink">home</button>
                 <button class="tablink-disabled"><a href="blog.html">blog</a></button>
                 <button class="tablink-disabled"><a href="project.html">projects</a></button>
             </div>
             
-            <div class="c-editor">
+            <div class="c-editor" id="c-editor">
             <main id="content">
                 <header>
                     <div class="flex-header">
@@ -197,24 +197,25 @@
                 </ul>
                 <div>
                     <span class="spans">
-                        <span aria-hidden="true" ob-themes-text="">Monokai</span>
+                        <span aria-hidden="true">Monokai</span>
                         <span class="read-link-icon" aria-hidden="true">↓</span>
-                        <select class="absolute top-0 left-0 w-full h-full font-medium opacity-0" aria-label="Select color theme." ob-themes-select>
-                            <option value="dark-plus">
-                                Dark+ 
+                        <select id="theme_select" aria-label="Select color theme." >
+                            <option value="dark">
+                                Darkk+ 
                             </option>
-                            <option value="light-plus">
+                            <option value="light">
                                 Light+ 
                             </option>
                             <option value="monokai">
                                 Monokai 
                             </option>
                             <option value="github-dark">
-                                GitHub Dark </option>
+                                GitHub Dark 
+                            </option>
                             <option value="github-light">
                                 GitHub Light
                             </option>
-                            <option value="solarized-light">
+                            <option value="solarized">
                                 Solarized Light    
                             </option>
                         </select>
@@ -226,5 +227,6 @@
             </div>
             </div>
         </div>
+        <script src="index.js"></script>
     </body>
 </html>
